@@ -2,7 +2,11 @@
     #top{
         display: grid;
         grid-template-columns: 4fr 7fr 4fr;
-        height: 3px;}
+        height: 30px;
+    
+        border-bottom: solid gray;
+        margin-bottom: 10px;
+    }
     #top img{
         margin-left: auto;
         margin-right: auto;
@@ -11,21 +15,30 @@
         object-fit: contain;}
     #top input{
         height: 60%;
-        width: 95%;
+        width: 65%;
 
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;
         margin-right: auto;
 
-        text-align: center;
-        background-color: #D3D6D6;
+        text-align: left;
+        background-color: whitesmoke;
 
-        border: solid gray;
+        border: grey;
         border-radius: 3px;
 
         font-size: 10px;
-        font-weight: 100;}
+        font-weight: 100;
+        }
+    i{
+        color: gray;}
+    #top i{
+        font-size: 14px;
+    }
+    #top div{
+        text-align: center;
+        padding-top: 6px;}
     h2{color:red;}
     .highlight{border: solid;}
     #profile{
@@ -48,7 +61,7 @@
         border: solid gray 1px;
         border-radius: 5px;
         margin-top: 10px;
-        margin-left: -35px;
+        margin-left: -10px;
     }
     .thumnail_grid{display:grid; grid-template-columns: 1fr 1fr 1fr;}
     .thumnail{width:100%;}
@@ -82,4 +95,14 @@
         display: grid;
         grid-template-columns: 45px 45px 1fr;}
     .highlight{text-align: center;}
+    #sub_icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        text-align: center;
+        font-size: 15px;
+
+        height: 30px;}
+    .selected{
+        border-bottom: solid gray 3px;}
 </style>
