@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded",
         configID.addEventListener("click",
             function(e){
                 idText.textContent = prompt("새로운 아이디를 입력하세요")
+            },
+            function isEmpty(e){
+                if(idText ==null) {
+                    return configID;
+                }
+                else{
+                    return idText;
+                }
             }
         )
 // 프로필 편집
@@ -64,9 +72,15 @@ document.addEventListener("DOMContentLoaded",
 
         profile_pic.addEventListener("click",
             function(e){
-                profile_pic.setAttribute("src", prompt("이미지 url을 입력해주세요."))
+                profile_pic.setAttribute("src", prompt("이미지 url을 입력해주세요.",))
             }
         )
+    // 아이콘 클릭 이동
+        let sub_icons = document.querySelector("#sub_icons button")
+        sub_icons.addEventListener("click",
+            function(e){
+            
+            })
     }
 )
 
